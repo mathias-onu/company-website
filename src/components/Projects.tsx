@@ -2,46 +2,50 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with real-time inventory management, payment integration, and admin dashboard.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      category: "Web Application"
+      title: "Electrical Vehicle Infrastructure Platform",
+      description: "Comprehensive platform for managing electric vehicle charging infrastructure with real-time monitoring, scheduling, and analytics capabilities.",
+      technologies: ["Angular", "TypeScript", "Java", "SpringBoot", "MariaDB", "AWS"],
+      category: "Web Application",
+      link: "#",
+      image: null
     },
     {
-      title: "Task Management System",
-      description: "Collaborative project management tool with real-time updates, team collaboration features, and advanced reporting.",
-      technologies: ["Vue.js", "Express", "MongoDB", "Socket.io"],
-      category: "SaaS Platform"
+      title: "GMonitor Dashboard",
+      description: "Dashboard for teachers and students to monitor student activity on GED Flash quizzes.",
+      technologies: ["Angular", "TypeScript", "Node.js", "Express.js", "MongoDB", "Render"],
+      category: "SaaS Platform",
+      link: "https://ged-monitoring-dashboard.vercel.app",
+      image: "/lovable-uploads/d0a2bdc8-b3d7-4723-bb7f-a1671ec475e4.png"
     },
     {
-      title: "Mobile Banking App",
-      description: "Secure mobile banking application with biometric authentication, transaction history, and budget tracking.",
-      technologies: ["React Native", "Firebase", "Node.js", "JWT"],
-      category: "Mobile App"
+      title: "GED Monitor Extension",
+      description: "Browser extension which facilitates the test monitoring for GMonitor Platform",
+      technologies: ["JavaScript", "Chrome API", "HTML", "CSS"],
+      category: "Browser extension",
+      link: "https://chromewebstore.google.com/detail/ged-monitor/nkginkabjihgljieglcghhldhekcnmdh?hl=en",
+      image: "/lovable-uploads/b5876448-66cf-40ff-bfa1-8fb4c8ce5d64.png"
     },
     {
-      title: "Healthcare Portal",
-      description: "Patient management system with appointment scheduling, medical records, and telemedicine capabilities.",
-      technologies: ["Angular", "Spring Boot", "MySQL", "WebRTC"],
-      category: "Web Portal"
+      title: "Natanael",
+      description: "Presentation website for Natanael, a pastry shop in Suceava, Romania.",
+      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      category: "Website",
+      link: "https://www.natanael.ro/",
+      image: "/lovable-uploads/87e64625-7774-42a3-bd5d-cbe555e17ef1.png"
     },
     {
-      title: "IoT Dashboard",
-      description: "Real-time monitoring dashboard for IoT devices with data visualization and alert management.",
-      technologies: ["React", "Python", "InfluxDB", "MQTT"],
-      category: "Dashboard"
-    },
-    {
-      title: "API Integration Service",
-      description: "Microservice architecture for third-party API integrations with rate limiting and error handling.",
-      technologies: ["Node.js", "Redis", "Docker", "Kubernetes"],
-      category: "Backend Service"
+      title: "Drywall Solutions",
+      description: "Presentation website for Drywall Solutions, an interior construction business in Brussels, Belgium.",
+      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+      category: "Website",
+      link: "https://www.drywallsolution.be/",
+      image: "/lovable-uploads/f1a72d98-1d45-4124-a385-8966103ba3d6.png"
     }
   ];
 
@@ -83,16 +87,27 @@ export const Projects = () => {
                   ))}
                 </div>
                 
-                <div className="flex gap-2 pt-2">
-                  <Button size="sm" variant="outline" className="flex-1 text-xs">
+                <div className="pt-2">
+                  <Button 
+                    size="sm" 
+                    variant="outline" 
+                    className="w-full text-xs"
+                    onClick={() => window.open(project.link, '_blank')}
+                  >
                     <ExternalLink className="h-3 w-3 mr-1" />
                     View Project
                   </Button>
-                  <Button size="sm" variant="outline" className="flex-1 text-xs">
-                    <Github className="h-3 w-3 mr-1" />
-                    Source Code
-                  </Button>
                 </div>
+
+                {project.image && (
+                  <div className="mt-4">
+                    <img 
+                      src={project.image} 
+                      alt={`${project.title} screenshot`}
+                      className="w-full h-auto rounded-md border border-border/20"
+                    />
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}
