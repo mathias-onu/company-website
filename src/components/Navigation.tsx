@@ -31,7 +31,7 @@ export const Navigation = () => {
               alt="ProtoZeph Logo" 
               className="h-10 w-10"
             />
-            <span className="text-xl font-bold text-foreground">ProtoZeph</span>
+            <span className="text-xl font-bold text-foreground">ProtoZeph Technologies</span>
           </div>
           
           <div className="flex items-center space-x-4">
@@ -40,7 +40,7 @@ export const Navigation = () => {
               onClick={scrollToContact}
               className="bg-foreground text-background hover:bg-foreground/90 transition-colors"
             >
-              Contact
+              Contact us
             </Button>
           </div>
         </div>

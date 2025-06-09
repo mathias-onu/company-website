@@ -46,7 +46,7 @@ export const Footer = () => {
         <Separator className="mb-6" />
         
         <div className="text-center text-muted-foreground">
-          <p>&copy; 2024 ProtoZeph. All rights reserved.</p>
+          <p>&copy; 2025 ProtoZeph. All rights reserved.</p>
         </div>
       </div>
     </footer>

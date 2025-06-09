@@ -80,26 +80,14 @@ export const Contact = () => {
                     create something amazing together.
                   </p>
                   
-                  <div className="space-y-4">
-                    <div className="text-sm text-muted-foreground">
-                      <strong className="text-foreground">What to include in your message:</strong>
-                      <ul className="list-disc list-inside mt-2 space-y-1">
-                        <li>Project overview and requirements</li>
-                        <li>Timeline and budget considerations</li>
-                        <li>Technology preferences (if any)</li>
-                        <li>Your contact information</li>
-                      </ul>
-                    </div>
-                    
-                    <Button 
-                      onClick={handleEmailClick}
-                      size="lg"
-                      className="w-full bg-foreground text-background hover:bg-foreground/90 group transition-all"
-                    >
-                      <Send className="mr-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      Send us an Email
-                    </Button>
-                  </div>
+                  <Button 
+                    onClick={handleEmailClick}
+                    size="lg"
+                    className="w-full bg-foreground text-background hover:bg-foreground/90 group transition-all"
+                  >
+                    <Send className="mr-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    Send us an Email
+                  </Button>
                 </CardContent>
               </Card>
             </div>

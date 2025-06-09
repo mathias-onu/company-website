@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code2, GitBranch, Smartphone, Globe, Database, Cog } from 'lucide-react';
+import { Code2, GitBranch, Smartphone, Globe, Cog } from 'lucide-react';
 
 export const Services = () => {
   const services = [
@@ -24,11 +24,6 @@ export const Services = () => {
       icon: Smartphone,
       title: "Mobile Solutions",
       description: "Cross-platform mobile applications that deliver exceptional user experiences across all devices."
-    },
-    {
-      icon: Database,
-      title: "Backend Development",
-      description: "Robust, scalable backend systems with secure APIs and efficient database design."
     },
     {
       icon: Cog,
