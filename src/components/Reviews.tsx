@@ -6,52 +6,25 @@ import { Star, Quote } from 'lucide-react';
 export const Reviews = () => {
   const reviews = [
     {
-      name: "Sarah Johnson",
-      company: "TechStart Inc.",
-      role: "CTO",
-      content: "ProtoZeph delivered exceptional results on our e-commerce platform. Their attention to detail and technical expertise exceeded our expectations.",
-      rating: 5,
-      avatar: "SJ"
+      name: "Jonathan Müll",
+      company: "Scty",
+      role: "Project Manager",
+      content: "I had the opportunity to work with Mathias Onu on various initiatives, and each time, I can say that we achieved unexpectedly great results. Mathias is not only highly skilled and creative from a technical standpoint but also has the ability to understand the business side and possesses a remarkable talent for working with people. Communication with Mathias is always smooth and generates a lot of momentum. I was genuinely impressed by his proactive approach, structured work style, and constant focus on progress and delivering high-performance results at top standards. In short, I wholeheartedly recommend Mathias!",
+      rating: 5
     },
     {
-      name: "Michael Chen",
-      company: "Digital Solutions Ltd.",
-      role: "Product Manager",
-      content: "Working with ProtoZeph was a game-changer for our project. They seamlessly integrated with our existing team and delivered high-quality code.",
-      rating: 5,
-      avatar: "MC"
-    },
-    {
-      name: "Emily Rodriguez",
-      company: "Healthcare Plus",
-      role: "Engineering Lead",
-      content: "The team's expertise in healthcare software development is impressive. They understood our complex requirements and delivered a robust solution.",
-      rating: 5,
-      avatar: "ER"
-    },
-    {
-      name: "David Thompson",
-      company: "FinTech Innovations",
+      name: "Radu Tamas",
+      company: "Codify Idea",
       role: "CEO",
-      content: "ProtoZeph's contribution to our mobile banking app was outstanding. Their security-first approach gave us confidence in the final product.",
-      rating: 5,
-      avatar: "DT"
+      content: "Mathias joined our team as an AngularJS Frontend Developer, and the stakeholders were consistently impressed with his work ethic, communication skills, and technical abilities. He quickly became a key contributor, effectively translating design mockups into responsive, high-quality user interfaces. In addition to technical skills, Mathias is an excellent communicator who is open to feedback and dedicated to continuous learning.",
+      rating: 5
     },
     {
-      name: "Lisa Wang",
-      company: "Smart IoT Systems",
-      role: "Technical Director",
-      content: "Excellent collaboration and communication throughout the project. The IoT dashboard they built exceeded our performance requirements.",
-      rating: 5,
-      avatar: "LW"
-    },
-    {
-      name: "Robert Martinez",
-      company: "Enterprise Solutions",
-      role: "VP of Technology",
-      content: "Their API integration service saved us months of development time. Professional, reliable, and technically superior work.",
-      rating: 5,
-      avatar: "RM"
+      name: "Bogdan Baran",
+      company: "Heaven Solutions",
+      role: "CTO",
+      content: "I worked closely with Mathias during this time [time working for Heaven Solutions], and I am happy how he handled his work and his team interactions. He was highly regarded by his peers and managers alike. I would recommend Mathias Onu to any software development organization. He is a dedicated and productive individual.",
+      rating: 5
     }
   ];
 
@@ -85,15 +58,10 @@ export const Reviews = () => {
                 </p>
                 
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-foreground/10 rounded-full flex items-center justify-center mr-3">
-                    <span className="text-sm font-semibold text-foreground">
-                      {review.avatar}
-                    </span>
-                  </div>
                   <div>
                     <div className="font-semibold text-foreground">{review.name}</div>
                     <div className="text-sm text-muted-foreground">
-                      {review.role} at {review.company}
+                      {review.role} @ {review.company}
                     </div>
                   </div>
                 </div>
