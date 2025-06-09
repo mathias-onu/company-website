@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink } from 'lucide-react';
@@ -88,15 +86,17 @@ export const Projects = () => {
                 </div>
                 
                 <div className="pt-2">
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="w-full text-xs"
-                    onClick={() => window.open(project.link, '_blank')}
-                  >
-                    <ExternalLink className="h-3 w-3 mr-1" />
-                    View Project
-                  </Button>
+                  {project.title !== "Electrical Vehicle Infrastructure Platform" && (
+                    <Button 
+                      size="sm" 
+                      variant="outline" 
+                      className="w-full text-xs"
+                      onClick={() => window.open(project.link, '_blank')}
+                    >
+                      <ExternalLink className="h-3 w-3 mr-1" />
+                      View Project
+                    </Button>
+                  )}
                 </div>
 
                 {project.image && (

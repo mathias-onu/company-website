@@ -12,7 +12,7 @@ export const Team = () => {
     {
       name: "Denis Onu",
       role: "Software Developer",
-      image: "/lovable-uploads/8df141d3-2892-42fe-8521-d5a17e5c5862.png"
+      image: "/lovable-uploads/denis-onu.jpg"
     }
   ];
 
@@ -37,7 +37,7 @@ export const Team = () => {
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-border/20 group-hover:border-foreground/20 transition-colors"
+                      className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-border/20 transition-colors"
                     />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">
