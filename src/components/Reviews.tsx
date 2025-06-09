@@ -42,8 +42,8 @@ export const Reviews = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reviews.map((review, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover-scale border-border/50 bg-background/80 backdrop-blur-sm">
-              <CardContent className="p-6">
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover-scale border-border/50 bg-background/80 backdrop-blur-sm flex flex-col">
+              <CardContent className="p-6 flex flex-col flex-grow">
                 <div className="flex items-center mb-4">
                   <Quote className="h-5 w-5 text-muted-foreground mr-2" />
                   <div className="flex">
@@ -53,16 +53,14 @@ export const Reviews = () => {
                   </div>
                 </div>
                 
-                <p className="text-muted-foreground mb-6 leading-relaxed italic">
+                <p className="text-muted-foreground mb-6 leading-relaxed italic flex-grow">
                   "{review.content}"
                 </p>
                 
-                <div className="flex items-center">
-                  <div>
-                    <div className="font-semibold text-foreground">{review.name}</div>
-                    <div className="text-sm text-muted-foreground">
-                      {review.role} @ {review.company}
-                    </div>
+                <div className="mt-auto">
+                  <div className="font-semibold text-foreground">{review.name}</div>
+                  <div className="text-sm text-muted-foreground">
+                    {review.role} @ {review.company}
                   </div>
                 </div>
               </CardContent>

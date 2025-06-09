@@ -16,7 +16,7 @@ export const Footer = () => {
                 alt="ProtoZeph Logo" 
                 className="h-8 w-8"
               />
-              <span className="text-lg font-bold text-foreground">ProtoZeph</span>
+              <span className="text-lg font-bold text-foreground">ProtoZeph Technologies</span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
               Custom software development and project contributions. 
@@ -28,7 +28,7 @@ export const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Services</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li>Custom Software Development</li>
-              <li>Project Contributions</li>
+              <li>Consultancy</li>
               <li>Web Applications</li>
               <li>Mobile Solutions</li>
             </ul>
@@ -46,7 +46,7 @@ export const Footer = () => {
         <Separator className="mb-6" />
         
         <div className="text-center text-muted-foreground">
-          <p>&copy; 2025 ProtoZeph. All rights reserved.</p>
+          <p>&copy; 2025 ProtoZeph Technologies. All rights reserved.</p>
         </div>
       </div>
     </footer>
