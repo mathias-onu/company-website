@@ -7,12 +7,14 @@ export const Team = () => {
     {
       name: "Mathias Onu",
       role: "CEO & Founder",
-      image: "/lovable-uploads/a26cdfc3-0b85-46fb-9d39-70d9522b064f.png"
+      image: "/lovable-uploads/a26cdfc3-0b85-46fb-9d39-70d9522b064f.png",
+      linkedinUrl: "https://www.linkedin.com/in/mathias-onu-b9bb35260/",
     },
     {
       name: "Denis Onu",
       role: "Software Developer",
-      image: "/lovable-uploads/denis-onu.jpg"
+      image: "/lovable-uploads/denis-onu.jpg",
+      linkedinUrl: "https://www.linkedin.com/in/denis-onu-36465b2a9/",
     }
   ];
 
@@ -46,6 +48,11 @@ export const Team = () => {
                   <p className="text-muted-foreground">
                     {member.role}
                   </p>
+                  <div className="flex justify-center mt-2">
+                    <a href={member.linkedinUrl} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <i className="fab fa-linkedin fa-2x text-[#0077b5]"></i>
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
             ))}

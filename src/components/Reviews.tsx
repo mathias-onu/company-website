@@ -16,7 +16,7 @@ export const Reviews = () => {
       name: "Radu Tamas",
       company: "Codify Idea",
       role: "CEO",
-      content: "Mathias joined our team as an AngularJS Frontend Developer, and the stakeholders were consistently impressed with his work ethic, communication skills, and technical abilities. He quickly became a key contributor, effectively translating design mockups into responsive, high-quality user interfaces. In addition to technical skills, Mathias is an excellent communicator who is open to feedback and dedicated to continuous learning.",
+      content: "I worked with Mathias for over a year as a Frontend Developer (Angular). Although he worked remotely, he integrated seamlessly with the team and communicated exceptionally well. Beyond his technical skills, he stood out for his work ethic, reliability, and excellent self-organization. On the technical side, he consistently delivered robust solutions, structured his work effectively, and proactively proposed ideas that simplified implementations. I strongly recommend Mathias to any team looking for a responsible, organised frontend developer focused on delivering client value.",
       rating: 5
     },
     {

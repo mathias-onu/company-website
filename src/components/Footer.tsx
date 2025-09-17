@@ -39,6 +39,11 @@ export const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li>mathias.onu@protozeph.com</li>
               <li>Iasi, Romania</li>
+              <li>
+                <a href="https://www.linkedin.com/company/protozeph-technologies" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i className="fab fa-linkedin fa-2x text-[#0077b5]"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
