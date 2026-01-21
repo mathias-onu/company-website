@@ -44,6 +44,14 @@ export const Projects = () => {
       category: "Website",
       link: "https://www.drywallsolution.be/",
       image: "/lovable-uploads/f1a72d98-1d45-4124-a385-8966103ba3d6.png"
+    },
+    {
+      title: "Hack for Heaven",
+      description: "A website designed for a hackathon competition focused on charitable and community-driven projects.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      category: "Hackathon Project",
+      link: "https://hack-for-heaven.vercel.app/",
+      image: "/lovable-uploads/hack-for-heaven.jpg"
     }
   ];
 
