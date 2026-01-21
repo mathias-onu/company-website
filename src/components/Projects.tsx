@@ -51,7 +51,7 @@ export const Projects = () => {
       technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
       category: "Hackathon Project",
       link: "https://hack-for-heaven.vercel.app/",
-      image: "/lovable-uploads/hack-for-heaven.jpg"
+      image: "/lovable-uploads/hack-for-heaven.png"
     }
   ];
 
