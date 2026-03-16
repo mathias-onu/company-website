@@ -6,7 +6,7 @@ import { Mail, MapPin, Clock, Send } from 'lucide-react';
 
 export const Contact = () => {
   const handleEmailClick = () => {
-    window.location.href = 'mailto:mathias.onu@protozeph.com?subject=Project Inquiry&body=Hello ProtoZeph team, I would like to discuss a project opportunity.';
+    window.location.href = 'mailto:mathias.onu@outlook.com?subject=Project Inquiry&body=Hello ProtoZeph team, I would like to discuss a project opportunity.';
   };
 
   return (
@@ -32,7 +32,7 @@ export const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Email Us</h3>
-                      <p className="text-muted-foreground">mathias.onu@protozeph.com</p>
+                      <p className="text-muted-foreground">mathias.onu@outlook.com</p>
                     </div>
                   </div>
                 </CardContent>

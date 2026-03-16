@@ -37,7 +37,7 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Contact</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>mathias.onu@protozeph.com</li>
+              <li>mathias.onu@outlook.com</li>
               <li>Iasi, Romania</li>
               <li>
                 <a href="https://www.linkedin.com/company/protozeph-technologies" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
