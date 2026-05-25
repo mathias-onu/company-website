@@ -42,7 +42,7 @@ export const Projects = () => {
       description: "Presentation website for Drywall Solutions, an interior construction business in Brussels, Belgium.",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
       category: "Website",
-      link: "https://www.drywallsolution.be/",
+      link: "https://drywall-solution.vercel.app/",
       image: "/lovable-uploads/f1a72d98-1d45-4124-a385-8966103ba3d6.png"
     },
     {
