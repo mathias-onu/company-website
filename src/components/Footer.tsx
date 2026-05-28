@@ -1,8 +1,11 @@
 
 import React from 'react';
 import { Separator } from '@/components/ui/separator';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export const Footer = () => {
+  const { messages } = useLanguage();
+
   return (
     <footer className="py-12 bg-muted/20">
       <div className="container mx-auto px-6">
@@ -19,28 +22,26 @@ export const Footer = () => {
               <span className="text-lg font-bold text-foreground">ProtoZeph Technologies</span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Custom software development and project contributions. 
-              Transforming ideas into powerful digital experiences.
+              {messages.footer.description}
             </p>
           </div>
           
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Services</h4>
+            <h4 className="font-semibold text-foreground mb-4">{messages.footer.servicesHeading}</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>Custom Software Development</li>
-              <li>Consultancy</li>
-              <li>Web Applications</li>
-              <li>Mobile Solutions</li>
+              {messages.footer.services.map((service, index) => (
+                <li key={index}>{service}</li>
+              ))}
             </ul>
           </div>
           
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Contact</h4>
+            <h4 className="font-semibold text-foreground mb-4">{messages.footer.contactHeading}</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li>mathias.onu@outlook.com</li>
-              <li>Iasi, Romania</li>
+              <li>{messages.contact.locationValue}</li>
               <li>
-                <a href="https://www.linkedin.com/company/protozeph-technologies" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/company/protozeph-technologies" target="_blank" rel="noopener noreferrer" aria-label={messages.footer.linkedinLabel}>
                   <i className="fab fa-linkedin fa-2x text-[#0077b5]"></i>
                 </a>
               </li>
@@ -51,7 +52,7 @@ export const Footer = () => {
         <Separator className="mb-6" />
         
         <div className="text-center text-muted-foreground">
-          <p>&copy; 2025 ProtoZeph Technologies. All rights reserved.</p>
+          <p>{messages.footer.copyright}</p>
         </div>
       </div>
     </footer>

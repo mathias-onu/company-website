@@ -2,68 +2,21 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export const Projects = () => {
-  const projects = [
-    {
-      title: "Electrical Vehicle Infrastructure Platform",
-      description: "Comprehensive platform for managing electric vehicle charging infrastructure with real-time monitoring, scheduling, and analytics capabilities.",
-      technologies: ["Angular", "TypeScript", "Java", "SpringBoot", "MariaDB", "AWS"],
-      category: "Web Application",
-      link: "#",
-      image: null
-    },
-    {
-      title: "GMonitor Dashboard",
-      description: "Dashboard for teachers and students to monitor student activity on GED Flash quizzes.",
-      technologies: ["Angular", "TypeScript", "Node.js", "Express.js", "MongoDB", "Render"],
-      category: "SaaS Platform",
-      link: "https://ged-monitoring-dashboard.vercel.app",
-      image: "/lovable-uploads/d0a2bdc8-b3d7-4723-bb7f-a1671ec475e4.png"
-    },
-    {
-      title: "GED Monitor Extension",
-      description: "Browser extension which facilitates the test monitoring for GMonitor Platform",
-      technologies: ["JavaScript", "Chrome API", "HTML", "CSS"],
-      category: "Browser extension",
-      link: "https://chromewebstore.google.com/detail/ged-monitor/nkginkabjihgljieglcghhldhekcnmdh?hl=en",
-      image: "/lovable-uploads/b5876448-66cf-40ff-bfa1-8fb4c8ce5d64.png"
-    },
-    {
-      title: "Natanael",
-      description: "Presentation website for Natanael, a pastry shop in Suceava, Romania.",
-      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      category: "Website",
-      link: "https://www.natanael.ro/",
-      image: "/lovable-uploads/87e64625-7774-42a3-bd5d-cbe555e17ef1.png"
-    },
-    {
-      title: "Drywall Solutions",
-      description: "Presentation website for Drywall Solutions, an interior construction business in Brussels, Belgium.",
-      technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      category: "Website",
-      link: "https://drywall-solution.vercel.app/",
-      image: "/lovable-uploads/f1a72d98-1d45-4124-a385-8966103ba3d6.png"
-    },
-    {
-      title: "Hack for Heaven",
-      description: "A website designed for a hackathon competition focused on charitable and community-driven projects.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-      category: "Hackathon Project",
-      link: "https://hack-for-heaven.vercel.app/",
-      image: "/lovable-uploads/hack-for-heaven.png"
-    }
-  ];
+  const { messages } = useLanguage();
+  const projects = messages.projects.list;
 
   return (
     <section id="projects" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Our Projects
+            {messages.projects.heading}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Showcasing our expertise through successful project deliveries across various industries
+            {messages.projects.subtitle}
           </p>
         </div>
         
@@ -94,7 +47,7 @@ export const Projects = () => {
                 </div>
                 
                 <div className="pt-2">
-                  {project.title !== "Electrical Vehicle Infrastructure Platform" && (
+                  {project.link && project.link !== '#' && (
                     <Button 
                       size="sm" 
                       variant="outline" 
@@ -102,7 +55,7 @@ export const Projects = () => {
                       onClick={() => window.open(project.link, '_blank')}
                     >
                       <ExternalLink className="h-3 w-3 mr-1" />
-                      View Project
+                      {messages.projects.viewProject}
                     </Button>
                   )}
                 </div>

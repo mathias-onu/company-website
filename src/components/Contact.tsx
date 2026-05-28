@@ -3,10 +3,15 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Mail, MapPin, Clock, Send } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export const Contact = () => {
+  const { messages } = useLanguage();
+
   const handleEmailClick = () => {
-    window.location.href = 'mailto:mathias.onu@outlook.com?subject=Project Inquiry&body=Hello ProtoZeph team, I would like to discuss a project opportunity.';
+    const subject = encodeURIComponent(messages.contact.emailSubject);
+    const body = encodeURIComponent(messages.contact.emailBody);
+    window.location.href = `mailto:mathias.onu@outlook.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -14,10 +19,10 @@ export const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Get In Touch
+            {messages.contact.heading}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your next project? Let's discuss how we can help bring your ideas to life.
+            {messages.contact.subtitle}
           </p>
         </div>
         
@@ -31,7 +36,7 @@ export const Contact = () => {
                       <Mail className="h-6 w-6 text-foreground" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">Email Us</h3>
+                      <h3 className="font-semibold text-foreground">{messages.contact.emailTitle}</h3>
                       <p className="text-muted-foreground">mathias.onu@outlook.com</p>
                     </div>
                   </div>
@@ -45,8 +50,8 @@ export const Contact = () => {
                       <MapPin className="h-6 w-6 text-foreground" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">Location</h3>
-                      <p className="text-muted-foreground">Iasi, Romania</p>
+                      <h3 className="font-semibold text-foreground">{messages.contact.locationTitle}</h3>
+                      <p className="text-muted-foreground">{messages.contact.locationValue}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -59,8 +64,8 @@ export const Contact = () => {
                       <Clock className="h-6 w-6 text-foreground" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">Response Time</h3>
-                      <p className="text-muted-foreground">Within 24 hours</p>
+                      <h3 className="font-semibold text-foreground">{messages.contact.responseTimeTitle}</h3>
+                      <p className="text-muted-foreground">{messages.contact.responseTimeValue}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -71,13 +76,11 @@ export const Contact = () => {
               <Card className="border-border/50 bg-background/80 backdrop-blur-sm">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-6 text-foreground">
-                    Ready to Start Your Project?
+                    {messages.contact.projectHeading}
                   </h3>
                   
                   <p className="text-muted-foreground mb-6 leading-relaxed">
-                    Whether you need custom software development, want to contribute to an existing project, 
-                    or need technical consultation, we're here to help. Let's discuss your requirements and 
-                    create something amazing together.
+                    {messages.contact.projectDescription}
                   </p>
                   
                   <Button 
@@ -86,7 +89,7 @@ export const Contact = () => {
                     className="w-full bg-foreground text-background hover:bg-foreground/90 group transition-all"
                   >
                     <Send className="mr-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    Send us an Email
+                    {messages.contact.sendEmail}
                   </Button>
                 </CardContent>
               </Card>

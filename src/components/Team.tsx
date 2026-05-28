@@ -1,32 +1,21 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export const Team = () => {
-  const team = [
-    {
-      name: "Mathias Onu",
-      role: "CEO & Founder",
-      image: "/lovable-uploads/a26cdfc3-0b85-46fb-9d39-70d9522b064f.png",
-      linkedinUrl: "https://www.linkedin.com/in/mathias-onu-b9bb35260/",
-    },
-    {
-      name: "Denis Onu",
-      role: "Software Developer",
-      image: "/lovable-uploads/denis-onu.jpg",
-      linkedinUrl: "https://www.linkedin.com/in/denis-onu-36465b2a9/",
-    }
-  ];
+  const { messages } = useLanguage();
+  const team = messages.team.members;
 
   return (
     <section id="team" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Our Team
+            {messages.team.heading}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Meet the dedicated professionals behind ProtoZeph Technologies
+            {messages.team.subtitle}
           </p>
         </div>
         

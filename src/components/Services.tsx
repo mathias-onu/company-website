@@ -2,50 +2,26 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Code2, GitBranch, Smartphone, Globe, Cog, Users } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 export const Services = () => {
-  const services = [
-    {
-      icon: Code2,
-      title: "Custom Software Development",
-      description: "Tailored solutions built from the ground up to meet your specific business requirements and objectives."
-    },
-    {
-      icon: Users,
-      title: "Consultancy",
-      description: "Expert guidance and strategic advice to help you make informed decisions about your software architecture and technology choices."
-    },
-    {
-      icon: GitBranch,
-      title: "Project Contributions",
-      description: "Expert assistance on existing projects, code reviews, feature additions, and technical debt reduction."
-    },
-    {
-      icon: Globe,
-      title: "Web Applications",
-      description: "Modern, responsive web applications using cutting-edge technologies and best practices."
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile Solutions",
-      description: "Cross-platform mobile applications that deliver exceptional user experiences across all devices."
-    },
-    {
-      icon: Cog,
-      title: "System Integration",
-      description: "Seamless integration of third-party services and legacy systems with modern architectures."
-    }
-  ];
+  const { messages } = useLanguage();
+  const serviceIcons = [Code2, Users, GitBranch, Globe, Smartphone, Cog];
+  const services = messages.services.list.map((service, index) => ({
+    icon: serviceIcons[index],
+    title: service.title,
+    description: service.description,
+  }));
 
   return (
     <section id="services" className="py-20 bg-muted/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Our Services
+            {messages.services.heading}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive software development solutions tailored to your business needs
+            {messages.services.subtitle}
           </p>
         </div>
         

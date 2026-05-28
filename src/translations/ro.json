@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "contactUs": "Contactează-ne"
+  },
+  "hero": {
+    "titleLine1": "Soluții Inovatoare",
+    "titleLine2": "pentru Afaceri Moderne",
+    "description": "Profesionalism. De încredere. Respect.",
+    "exploreServices": "Descoperă Serviciile",
+    "getInTouch": "Contactează-ne"
+  },
+  "services": {
+    "heading": "Serviciile Noastre",
+    "subtitle": "Soluții complete de dezvoltare software adaptate nevoilor afacerii tale",
+    "list": [
+      {
+        "title": "Dezvoltare Software Personalizată",
+        "description": "Soluții personalizate construite de la zero pentru a răspunde cerințelor și obiectivelor tale de business."
+      },
+      {
+        "title": "Consultanță",
+        "description": "Ghidare de specialitate și recomandări strategice pentru a lua decizii corecte privind arhitectura și tehnologiile folosite."
+      },
+      {
+        "title": "Contribuții în Proiecte",
+        "description": "Asistență expertă pentru proiecte existente, code review-uri, adăugarea de funcționalități și reducerea datoriei tehnice."
+      },
+      {
+        "title": "Aplicații Web",
+        "description": "Aplicații web moderne și responsive, create cu tehnologii de ultimă generație și bune practici."
+      },
+      {
+        "title": "Soluții Mobile",
+        "description": "Aplicații mobile cross-platform care oferă experiențe excelente pe toate dispozitivele."
+      },
+      {
+        "title": "Integrare de Sisteme",
+        "description": "Integrare fluidă a serviciilor terțe și a sistemelor legacy în arhitecturi moderne."
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Proiectele Noastre",
+    "subtitle": "Punem în evidență expertiza prin livrări de proiecte de succes din diverse industrii",
+    "viewProject": "Vezi Proiectul",
+    "list": [
+      {
+        "title": "Platformă pentru Infrastructură de Vehicule Electrice",
+        "description": "Platformă completă pentru gestionarea infrastructurii de încărcare a vehiculelor electrice, cu monitorizare în timp real, programare și capacități de analiză.",
+        "technologies": ["Angular", "TypeScript", "Java", "SpringBoot", "MariaDB", "AWS"],
+        "category": "Aplicație Web",
+        "link": "#",
+        "image": null
+      },
+      {
+        "title": "GMonitor Dashboard",
+        "description": "Tablou de bord pentru profesori și elevi care monitorizează activitatea studenților la testele GED Flash.",
+        "technologies": ["Angular", "TypeScript", "Node.js", "Express.js", "MongoDB", "Render"],
+        "category": "Platformă SaaS",
+        "link": "https://ged-monitoring-dashboard.vercel.app",
+        "image": "/lovable-uploads/d0a2bdc8-b3d7-4723-bb7f-a1671ec475e4.png"
+      },
+      {
+        "title": "Extensie GED Monitor",
+        "description": "Extensie de browser care facilitează monitorizarea testelor pentru platforma GMonitor.",
+        "technologies": ["JavaScript", "Chrome API", "HTML", "CSS"],
+        "category": "Extensie Browser",
+        "link": "https://chromewebstore.google.com/detail/ged-monitor/nkginkabjihgljieglcghhldhekcnmdh?hl=en",
+        "image": "/lovable-uploads/b5876448-66cf-40ff-bfa1-8fb4c8ce5d64.png"
+      },
+      {
+        "title": "Natanael",
+        "description": "Site de prezentare pentru Natanael, o cofetărie-patiserie din Suceava, România.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        "category": "Website",
+        "link": "https://www.natanael.ro/",
+        "image": "/lovable-uploads/87e64625-7774-42a3-bd5d-cbe555e17ef1.png"
+      },
+      {
+        "title": "Drywall Solutions",
+        "description": "Site de prezentare pentru Drywall Solutions, o companie de construcții interioare din Bruxelles, Belgia.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        "category": "Website",
+        "link": "https://drywall-solution.vercel.app/",
+        "image": "/lovable-uploads/f1a72d98-1d45-4124-a385-8966103ba3d6.png"
+      },
+      {
+        "title": "Hack for Heaven",
+        "description": "Un site creat pentru un hackathon axat pe proiecte caritabile și orientate către comunitate.",
+        "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
+        "category": "Proiect Hackathon",
+        "link": "https://hack-for-heaven.vercel.app/",
+        "image": "/lovable-uploads/hack-for-heaven.png"
+      }
+    ]
+  },
+  "team": {
+    "heading": "Echipa Noastră",
+    "subtitle": "Întâlnește profesioniștii dedicați din spatele ProtoZeph Technologies",
+    "members": [
+      {
+        "name": "Mathias Onu",
+        "role": "CEO & Fondator"
+      },
+      {
+        "name": "Denis Onu",
+        "role": "Dezvoltator Software"
+      }
+    ]
+  },
+  "reviews": {
+    "heading": "Recenzii Clienți",
+    "subtitle": "Nu ne crede doar pe cuvânt - află ce spun clienții noștri despre colaborarea cu noi",
+    "list": [
+      {
+        "name": "Jonathan Müll",
+        "company": "Scty",
+        "role": "Project Manager",
+        "content": "Am avut ocazia să lucrez cu Mathias Onu la diverse inițiative și de fiecare dată am obținut rezultate neașteptat de bune. Mathias nu este doar foarte priceput și creativ din punct de vedere tehnic, ci are și capacitatea de a înțelege partea de business și un talent remarcabil în relația cu oamenii. Comunicarea cu Mathias este întotdeauna fluidă și generează mult avânt. Am fost sincer impresionat de abordarea sa proactivă, de stilul de lucru structurat și de concentrarea constantă pe progres și livrarea de rezultate performante la standarde înalte. În concluzie, îl recomand cu toată inima pe Mathias!",
+        "rating": 5
+      },
+      {
+        "name": "Radu Tamas",
+        "company": "Codify Idea",
+        "role": "CEO",
+        "content": "Am lucrat cu Mathias mai mult de un an ca Frontend Developer (Angular). Deși a lucrat remote, s-a integrat perfect în echipă și a comunicat excepțional. Dincolo de abilitățile tehnice, s-a remarcat prin etica profesională, fiabilitate și auto-organizare excelentă. Din punct de vedere tehnic, a livrat constant soluții robuste, și-a structurat bine munca și a propus proactiv idei care au simplificat implementările. Îl recomand cu tărie pe Mathias oricărei echipe care caută un frontend developer responsabil, organizat și orientat spre valoare pentru client.",
+        "rating": 5
+      },
+      {
+        "name": "Bogdan Baran",
+        "company": "Heaven Solutions",
+        "role": "CTO",
+        "content": "Am lucrat îndeaproape cu Mathias în acea perioadă [timpul petrecut la Heaven Solutions] și sunt mulțumit de modul în care și-a gestionat munca și interacțiunile cu echipa. A fost foarte apreciat de colegi și manageri. Aș recomanda pe Mathias Onu oricărei organizații de dezvoltare software. Este o persoană dedicată și productivă.",
+        "rating": 5
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contactează-ne",
+    "subtitle": "Ești gata să începi următorul proiect? Hai să discutăm cum te putem ajuta să aduci ideile la viață.",
+    "emailTitle": "Trimite un email",
+    "locationTitle": "Locație",
+    "locationValue": "Iași, România",
+    "responseTimeTitle": "Timp de răspuns",
+    "responseTimeValue": "În maximum 24 de ore",
+    "projectHeading": "Gata să începi proiectul?",
+    "projectDescription": "Fie că ai nevoie de dezvoltare software personalizată, vrei să contribui la un proiect existent sau ai nevoie de consultanță tehnică, suntem aici pentru a te ajuta. Hai să discutăm cerințele tale și să creăm ceva uimitor împreună.",
+    "sendEmail": "Trimite-ne un email",
+    "emailSubject": "Întrebare despre proiect",
+    "emailBody": "Bună echipă ProtoZeph, aș dori să discut o oportunitate de proiect."
+  },
+  "footer": {
+    "description": "Dezvoltare software personalizată și contribuții pentru proiecte. Transformăm ideile în experiențe digitale puternice.",
+    "servicesHeading": "Servicii",
+    "services": ["Dezvoltare Software Personalizată", "Consultanță", "Aplicații Web", "Soluții Mobile"],
+    "contactHeading": "Contact",
+    "linkedinLabel": "LinkedIn",
+    "copyright": "© 2025 ProtoZeph Technologies. Toate drepturile rezervate."
+  }
+}

@@ -2,11 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
 // import { ThemeToggle } from './ThemeToggle';
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,12 +41,21 @@ export const Navigation = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* <ThemeToggle /> */}
+            <select
+              value={language}
+              onChange={(event) => setLanguage(event.target.value as 'en' | 'ro')}
+              aria-label="Select language"
+              className="rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground outline-none transition-colors"
+            >
+              <option value="en">English</option>
+              <option value="ro">Română</option>
+            </select>
+
             <Button 
               onClick={scrollToContact}
               className="bg-foreground text-background hover:bg-foreground/90 transition-colors"
             >
-              Contact us
+              {t('nav.contactUs')}
             </Button>
           </div>
 
@@ -65,12 +76,20 @@ export const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-3">
-              {/* <ThemeToggle /> */}
+              <select
+                value={language}
+                onChange={(event) => setLanguage(event.target.value as 'en' | 'ro')}
+                aria-label="Select language"
+                className="rounded-md border border-border bg-background px-3 py-2 text-sm text-foreground outline-none transition-colors w-full"
+              >
+                <option value="en">English</option>
+                <option value="ro">Română</option>
+              </select>
               <Button 
                 onClick={scrollToContact}
                 className="bg-foreground text-background hover:bg-foreground/90 transition-colors w-full"
               >
-                Contact us
+                {t('nav.contactUs')}
               </Button>
             </div>
           </div>

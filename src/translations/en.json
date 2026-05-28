@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "contactUs": "Contact us"
+  },
+  "hero": {
+    "titleLine1": "Innovative Solutions",
+    "titleLine2": "for Modern Businesses",
+    "description": "Professionalism. Reliable. Trust.",
+    "exploreServices": "Explore Our Services",
+    "getInTouch": "Get In Touch"
+  },
+  "services": {
+    "heading": "Our Services",
+    "subtitle": "Comprehensive software development solutions tailored to your business needs",
+    "list": [
+      {
+        "title": "Custom Software Development",
+        "description": "Tailored solutions built from the ground up to meet your specific business requirements and objectives."
+      },
+      {
+        "title": "Consultancy",
+        "description": "Expert guidance and strategic advice to help you make informed decisions about your software architecture and technology choices."
+      },
+      {
+        "title": "Project Contributions",
+        "description": "Expert assistance on existing projects, code reviews, feature additions, and technical debt reduction."
+      },
+      {
+        "title": "Web Applications",
+        "description": "Modern, responsive web applications using cutting-edge technologies and best practices."
+      },
+      {
+        "title": "Mobile Solutions",
+        "description": "Cross-platform mobile applications that deliver exceptional user experiences across all devices."
+      },
+      {
+        "title": "System Integration",
+        "description": "Seamless integration of third-party services and legacy systems with modern architectures."
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Our Projects",
+    "subtitle": "Showcasing our expertise through successful project deliveries across various industries",
+    "viewProject": "View Project",
+    "list": [
+      {
+        "title": "Electrical Vehicle Infrastructure Platform",
+        "description": "Comprehensive platform for managing electric vehicle charging infrastructure with real-time monitoring, scheduling, and analytics capabilities.",
+        "technologies": ["Angular", "TypeScript", "Java", "SpringBoot", "MariaDB", "AWS"],
+        "category": "Web Application",
+        "link": "#",
+        "image": null
+      },
+      {
+        "title": "GMonitor Dashboard",
+        "description": "Dashboard for teachers and students to monitor student activity on GED Flash quizzes.",
+        "technologies": ["Angular", "TypeScript", "Node.js", "Express.js", "MongoDB", "Render"],
+        "category": "SaaS Platform",
+        "link": "https://ged-monitoring-dashboard.vercel.app",
+        "image": "/lovable-uploads/d0a2bdc8-b3d7-4723-bb7f-a1671ec475e4.png"
+      },
+      {
+        "title": "GED Monitor Extension",
+        "description": "Browser extension which facilitates the test monitoring for GMonitor Platform",
+        "technologies": ["JavaScript", "Chrome API", "HTML", "CSS"],
+        "category": "Browser Extension",
+        "link": "https://chromewebstore.google.com/detail/ged-monitor/nkginkabjihgljieglcghhldhekcnmdh?hl=en",
+        "image": "/lovable-uploads/b5876448-66cf-40ff-bfa1-8fb4c8ce5d64.png"
+      },
+      {
+        "title": "Natanael",
+        "description": "Presentation website for Natanael, a pastry shop in Suceava, Romania.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        "category": "Website",
+        "link": "https://www.natanael.ro/",
+        "image": "/lovable-uploads/87e64625-7774-42a3-bd5d-cbe555e17ef1.png"
+      },
+      {
+        "title": "Drywall Solutions",
+        "description": "Presentation website for Drywall Solutions, an interior construction business in Brussels, Belgium.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
+        "category": "Website",
+        "link": "https://drywall-solution.vercel.app/",
+        "image": "/lovable-uploads/f1a72d98-1d45-4124-a385-8966103ba3d6.png"
+      },
+      {
+        "title": "Hack for Heaven",
+        "description": "A website designed for a hackathon competition focused on charitable and community-driven projects.",
+        "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
+        "category": "Hackathon Project",
+        "link": "https://hack-for-heaven.vercel.app/",
+        "image": "/lovable-uploads/hack-for-heaven.png"
+      }
+    ]
+  },
+  "team": {
+    "heading": "Our Team",
+    "subtitle": "Meet the dedicated professionals behind ProtoZeph Technologies",
+    "members": [
+      {
+        "name": "Mathias Onu",
+        "role": "CEO & Founder"
+      },
+      {
+        "name": "Denis Onu",
+        "role": "Software Developer"
+      }
+    ]
+  },
+  "reviews": {
+    "heading": "Client Reviews",
+    "subtitle": "Don't just take our word for it - hear what our clients have to say about working with us",
+    "list": [
+      {
+        "name": "Jonathan Müll",
+        "company": "Scty",
+        "role": "Project Manager",
+        "content": "I had the opportunity to work with Mathias Onu on various initiatives, and each time, I can say that we achieved unexpectedly great results. Mathias is not only highly skilled and creative from a technical standpoint but also has the ability to understand the business side and possesses a remarkable talent for working with people. Communication with Mathias is always smooth and generates a lot of momentum. I was genuinely impressed by his proactive approach, structured work style, and constant focus on progress and delivering high-performance results at top standards. In short, I wholeheartedly recommend Mathias!",
+        "rating": 5
+      },
+      {
+        "name": "Radu Tamas",
+        "company": "Codify Idea",
+        "role": "CEO",
+        "content": "I worked with Mathias for over a year as a Frontend Developer (Angular). Although he worked remotely, he integrated seamlessly with the team and communicated exceptionally well. Beyond his technical skills, he stood out for his work ethic, reliability, and excellent self-organization. On the technical side, he consistently delivered robust solutions, structured his work effectively, and proactively proposed ideas that simplified implementations. I strongly recommend Mathias to any team looking for a responsible, organised frontend developer focused on delivering client value.",
+        "rating": 5
+      },
+      {
+        "name": "Bogdan Baran",
+        "company": "Heaven Solutions",
+        "role": "CTO",
+        "content": "I worked closely with Mathias during this time [time working for Heaven Solutions], and I am happy how he handled his work and his team interactions. He was highly regarded by his peers and managers alike. I would recommend Mathias Onu to any software development organization. He is a dedicated and productive individual.",
+        "rating": 5
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Get In Touch",
+    "subtitle": "Ready to start your next project? Let's discuss how we can help bring your ideas to life.",
+    "emailTitle": "Email Us",
+    "locationTitle": "Location",
+    "locationValue": "Iasi, Romania",
+    "responseTimeTitle": "Response Time",
+    "responseTimeValue": "Within 24 hours",
+    "projectHeading": "Ready to Start Your Project?",
+    "projectDescription": "Whether you need custom software development, want to contribute to an existing project, or need technical consultation, we're here to help. Let's discuss your requirements and create something amazing together.",
+    "sendEmail": "Send us an Email",
+    "emailSubject": "Project Inquiry",
+    "emailBody": "Hello ProtoZeph team, I would like to discuss a project opportunity."
+  },
+  "footer": {
+    "description": "Custom software development and project contributions. Transforming ideas into powerful digital experiences.",
+    "servicesHeading": "Services",
+    "services": ["Custom Software Development", "Consultancy", "Web Applications", "Mobile Solutions"],
+    "contactHeading": "Contact",
+    "linkedinLabel": "LinkedIn",
+    "copyright": "© 2025 ProtoZeph Technologies. All rights reserved."
+  }
+}
