@@ -100,11 +100,15 @@
     "members": [
       {
         "name": "Mathias Onu",
-        "role": "CEO & Fondator"
+        "role": "CEO & Fondator",
+        "image": "/lovable-uploads/mathias-onu.png",
+        "linkedinUrl": "https://www.linkedin.com/in/mathias-onu-b9bb35260/"
       },
       {
         "name": "Denis Onu",
-        "role": "Dezvoltator Software"
+        "role": "Dezvoltator Software",
+        "image": "/lovable-uploads/denis-onu.jpg",
+        "linkedinUrl": "https://www.linkedin.com/in/denis-onu-36465b2a9/"
       }
     ]
   },
