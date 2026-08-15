@@ -53,6 +53,14 @@
         "image": null
       },
       {
+        "title": "Planimex Presentation Website",
+        "description": "Presentation and portfolio website for Planimex, a construction company based in Cluj-Napoca, Romania.",
+        "technologies": ["AI technologies"],
+        "category": "Website",
+        "link": "https://planimex.ro/",
+        "image": "/planimex-project.png"
+      },
+      {
         "title": "GMonitor Dashboard",
         "description": "Dashboard for teachers and students to monitor student activity on GED Flash quizzes.",
         "technologies": ["Angular", "TypeScript", "Node.js", "Express.js", "MongoDB", "Render"],
@@ -77,20 +85,20 @@
         "image": "/lovable-uploads/87e64625-7774-42a3-bd5d-cbe555e17ef1.png"
       },
       {
+        "title": "Hack for Heaven",
+        "description": "A website designed for a hackathon competition focused on charitable and community-driven projects.",
+        "technologies": ["AI video generation tools", "React", "TypeScript", "Tailwind CSS", "Vite"],
+        "category": "Hackathon Project",
+        "link": "https://hack-for-heaven.vercel.app/",
+        "image": "/lovable-uploads/hack-for-heaven.png"
+      },
+      {
         "title": "Drywall Solutions",
         "description": "Presentation website for Drywall Solutions, an interior construction business in Brussels, Belgium.",
         "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
         "category": "Website",
         "link": "https://drywall-solution.vercel.app/",
         "image": "/lovable-uploads/f1a72d98-1d45-4124-a385-8966103ba3d6.png"
-      },
-      {
-        "title": "Hack for Heaven",
-        "description": "A website designed for a hackathon competition focused on charitable and community-driven projects.",
-        "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
-        "category": "Hackathon Project",
-        "link": "https://hack-for-heaven.vercel.app/",
-        "image": "/lovable-uploads/hack-for-heaven.png"
       }
     ]
   },

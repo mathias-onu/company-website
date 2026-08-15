@@ -53,6 +53,14 @@
         "image": null
       },
       {
+        "title": "Planimex Presentation Website",
+        "description": "Presentation and portfolio website for Planimex, a construction company based in Cluj-Napoca, Romania.",
+        "technologies": ["AI technologies"],
+        "category": "Website",
+        "link": "https://planimex.ro/",
+        "image": "/planimex-project.png"
+      },
+      {
         "title": "GMonitor Dashboard",
         "description": "Tablou de bord pentru profesori și elevi care monitorizează activitatea studenților la testele GED Flash.",
         "technologies": ["Angular", "TypeScript", "Node.js", "Express.js", "MongoDB", "Render"],
@@ -77,20 +85,20 @@
         "image": "/lovable-uploads/87e64625-7774-42a3-bd5d-cbe555e17ef1.png"
       },
       {
+        "title": "Hack for Heaven",
+        "description": "Un site creat pentru un hackathon axat pe proiecte caritabile și orientate către comunitate.",
+        "technologies": ["AI video generation tools", "React", "TypeScript", "Tailwind CSS", "Vite"],
+        "category": "Proiect Hackathon",
+        "link": "https://hack-for-heaven.vercel.app/",
+        "image": "/lovable-uploads/hack-for-heaven.png"
+      },
+      {
         "title": "Drywall Solutions",
         "description": "Site de prezentare pentru Drywall Solutions, o companie de construcții interioare din Bruxelles, Belgia.",
         "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"],
         "category": "Website",
         "link": "https://drywall-solution.vercel.app/",
         "image": "/lovable-uploads/f1a72d98-1d45-4124-a385-8966103ba3d6.png"
-      },
-      {
-        "title": "Hack for Heaven",
-        "description": "Un site creat pentru un hackathon axat pe proiecte caritabile și orientate către comunitate.",
-        "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
-        "category": "Proiect Hackathon",
-        "link": "https://hack-for-heaven.vercel.app/",
-        "image": "/lovable-uploads/hack-for-heaven.png"
       }
     ]
   },
