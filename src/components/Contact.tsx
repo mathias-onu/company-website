@@ -1,18 +1,11 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Mail, MapPin, Clock, Send } from 'lucide-react';
+import { Mail, MapPin, Clock } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export const Contact = () => {
   const { messages } = useLanguage();
-
-  const handleEmailClick = () => {
-    const subject = encodeURIComponent(messages.contact.emailSubject);
-    const body = encodeURIComponent(messages.contact.emailBody);
-    window.location.href = `mailto:mathias.onu@outlook.com?subject=${subject}&body=${body}`;
-  };
 
   return (
     <section id="contact" className="py-20">
@@ -37,7 +30,7 @@ export const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">{messages.contact.emailTitle}</h3>
-                      <p className="text-muted-foreground">mathias.onu@outlook.com</p>
+                      <p className="text-muted-foreground">mathias.onu@protozeph.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -82,15 +75,6 @@ export const Contact = () => {
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     {messages.contact.projectDescription}
                   </p>
-                  
-                  <Button 
-                    onClick={handleEmailClick}
-                    size="lg"
-                    className="w-full bg-foreground text-background hover:bg-foreground/90 group transition-all"
-                  >
-                    <Send className="mr-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    {messages.contact.sendEmail}
-                  </Button>
                 </CardContent>
               </Card>
             </div>

@@ -38,7 +38,7 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">{messages.footer.contactHeading}</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>mathias.onu@outlook.com</li>
+              <li>mathias.onu@protozeph.com</li>
               <li>{messages.contact.locationValue}</li>
               <li>
                 <a href="https://www.linkedin.com/company/protozeph-technologies" target="_blank" rel="noopener noreferrer" aria-label={messages.footer.linkedinLabel}>
